@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zx.mapper.UserMapper">
+
+    <!--查询是否存在该用户-->
+    <select id="selectUsername" resultType="java.lang.String">
+        select id from users where username=#{username}
+    </select>
+
+    <!--保存用户-->
+    <insert id="saveUsers">
+        insert users values(#{id},#{username},#{password},#{faceImage},#{nickname},#{fansCounts},#{followCounts},#{receiveLikeCounts})
+        <selectKey></selectKey>
+    </insert>
+
+    <!--用户登录-->
+    <select id="selectUsers" resultType="java.lang.String" parameterType="com.zx.pojo.Users">
+        select username from users where username=#{username} and password=#{password}
+    </select>
+</mapper>
