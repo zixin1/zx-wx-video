@@ -40,7 +40,6 @@
         </dependency>
 
 
-
         <!--mysql驱动 mybatis依赖-->
         <dependency>
             <groupId>mysql</groupId>
@@ -58,7 +57,6 @@
             <version>1.2.4</version>
         </dependency>
 
-
         <!--工具类-->
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -70,6 +68,29 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.4</version>
         </dependency>
+
+        <!-- swagger自动生成接口文档 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+
+        <!-- swagger 自动生成接口文档UI优化 -->
+        <!--<dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>-->
+
+
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>swagger-bootstrap-ui</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+
+
 
 
     </dependencies>
